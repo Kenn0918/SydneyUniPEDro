@@ -1,0 +1,85 @@
+{
+    "code": 0,
+    "data": [
+        {
+            "avatar": "",
+            "create_date": "",
+            "create_time": ,
+            "datasets": [
+                {
+                    "avatar": null,
+                    "chunk_num": 4101,
+                    "create_date": "",
+                    "create_time": ,
+                    "created_by": "",
+                    "description": null,
+                    "doc_num": 4101,
+                    "embd_id": "text-embedding-3-large@OpenAI",
+                    "graphrag_task_finish_at": null,
+                    "graphrag_task_id": null,
+                    "id": "",
+                    "language": "English",
+                    "mindmap_task_finish_at": null,
+                    "mindmap_task_id": null,
+                    "name": "labelled records",
+                    "pagerank": 0,
+                    "parser_config": {
+                        "image_context_size": 0,
+                        "llm_id": "gpt-4o@OpenAI",
+                        "table_context_size": 0
+                    },
+                    "parser_id": "one",
+                    "permission": "me",
+                    "pipeline_id": "",
+                    "raptor_task_finish_at": null,
+                    "raptor_task_id": null,
+                    "similarity_threshold": 0.2,
+                    "status": "1",
+                    "tenant_id": "",
+                    "token_num": 1932807,
+                    "update_date": "",
+                    "update_time": ,
+                    "vector_similarity_weight": 0.3
+                }
+            ],
+            "description": "",
+            "do_refer": "1",
+            "id": "",
+            "language": "English",
+            "llm": {
+                "model_name": "gpt-4o@OpenAI"
+            },
+            "meta_data_filter": {},
+            "name": "PEDro",
+            "prompt": {
+                "cross_languages": [],
+                "empty_response": "",
+                "keyword": false,
+                "keywords_similarity_weight": 0.19999999999999996,
+                "opener": "Hi! I'm your assistant. What can I do for you?",
+                "prompt": "I want you to identify articles that meet the criteria to be included in the Physiotherapy Evidence Database (PEDro) database.  \n\nI have one knowledge database {knowledge} and one data record that need to be labelled. Both have three columns: Title (column A), Abstract (column B), and Label (column C). Each file has different records, and each row represents a record. Each record has a title and an abstract. The knowledge dataset that I provided to you has an additional column called \u2018label\u2019 which indicates records that have been screened by a human. \u20180\u2019 means the record will not be included in the PEDro database, whereas \u20181\u2019 means the record is eligible.  \n\nIn another Excel file, I have records that have not been screened by humans, and I would need you to determine whether the record shall be included based on the title and abstract  \n\nYou will need to learn from the knowledge base {knowledge}, as it will serve as a training dataset.  \n\nThen, you will need to provide me with a label for each record similar to the training knowledge base.\n\nAs there may be an imbalance of included and excluded articles in the training dataset, please also consider running a cross-validation and class weighting model. \n\nYou only need to provide with a label inclusion or exclusion. The output must be 0 for exclusion or 1 inclusion .",
+                "reasoning": false,
+                "refine_multiturn": false,
+                "rerank_model": "",
+                "show_quote": true,
+                "similarity_threshold": 0.8,
+                "toc_enhance": false,
+                "top_n": 3,
+                "tts": false,
+                "use_kg": false,
+                "variables": [
+                    {
+                        "key": "knowledge",
+                        "optional": false
+                    }
+                ]
+            },
+            "prompt_type": "simple",
+            "status": "1",
+            "tenant_id": "",
+            "top_k": 1024,
+            "update_date": "",
+            "update_time": 
+        }
+    ]
+}
