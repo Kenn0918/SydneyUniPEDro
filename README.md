@@ -1,14 +1,22 @@
 # SydneyUniPEDro
 
-# Automated Citation Screening for PEDro Using RAGflow
+# Automated Citation Screening for PEDro Using Machine Learning, BERT, and RAG
 
 This repository contains the automated screening pipeline used to classify bibliographic records for inclusion in the [Physiotherapy Evidence Database (PEDro)](https://www.pedro.org.au/). It accompanies the paper as an appendix to support reproducibility.
 
 ## Overview
 
-Each record (title + abstract) is sent to a RAGflow chat assistant that uses retrieval-augmented generation (RAG) to classify it as eligible (`1`) or ineligible (`0`) for inclusion in PEDro. The chat assistant retrieves similar records from a knowledge base of 4,101 human-labelled records to inform each decision.
+This repository contains an automated pipeline for screening bibliographic records for inclusion in the [Physiotherapy Evidence Database (PEDro)](https://www.pedro.org.au/). It accompanies the paper as an appendix to support reproducibility.
 
-In addition to the RAG-based approach, this repository also includes baseline machine learning and transformer-based models for comparison.
+The repository implements and compares three approaches:
+
+- **Traditional machine learning models** (Support Vector Machine and Logistic Regression)
+- **Transformer-based models** (BioBERT, Bio_ClinicalBERT, ClinicalBERT, and SciBERT)
+- **Retrieval-augmented generation (RAG)** using a RAGflow-based large language model pipeline
+
+For the RAG-based approach, each record (title + abstract) is processed using a retrieval-augmented generation pipeline. Relevant examples are retrieved from a knowledge base of 4,101 human-labelled records and incorporated into the model input to support classification as eligible (`1`) or ineligible (`0`).
+
+All approaches are evaluated on the same dataset to enable consistent comparison across methods.
 
 ## Repository Contents
 
