@@ -2,7 +2,7 @@
 
 # Automated Citation Screening for PEDro Using Machine Learning, BERT, and RAG
 
-This repository contains the automated screening pipeline used to classify bibliographic records for inclusion in the [Physiotherapy Evidence Database (PEDro)](https://www.pedro.org.au/). It accompanies the paper as an appendix to support reproducibility.
+This repository contains the automated screening pipeline used to classify bibliographic records for inclusion in the [Physiotherapy Evidence Database (PEDro)](https://www.pedro.org.au/). It accompanies the paper “Automated approaches to identifying clinical trials based on title and abstract in the field of physiotherapy: a comparative analysis” as an appendix to support reproducibility.
 
 ## Overview
 
